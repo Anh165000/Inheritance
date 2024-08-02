@@ -40,6 +40,5 @@ public class Square {
     // public void setArea(float area) {
     //     this.area = area;
     // }
-
     
 }
