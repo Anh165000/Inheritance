@@ -6,12 +6,14 @@ public class Rectangle {
     public String color;
     public double width;
     public double length;
+    public double area;
 
     public Rectangle(String owner, String color, double width, double length) {
         this.owner = owner;
         this.color = color;
         this.width = width;
         this.length = length;
+        area = width * length;
     }
 
     public String getOwner() {
@@ -45,6 +47,14 @@ public class Rectangle {
     public void setLength(double length) {
         this.length = length;
     }
+    
+    public double getArea() {
+        return area;
+    }
+
+    // public void setArea(double area) {
+    //     this.area = area;
+    // }
 
     @Override
     public String toString() {
@@ -52,7 +62,8 @@ public class Rectangle {
     }
 
     public void paint(){
-        System.out.printf("|Rectangle   |%-15s|%-10s|%4.1f|%4.1f|", owner, color, width, length);
+        System.out.printf("|Rectangle   |%-15s|%-10s|%4.1f|%4.1f|%5.1f|", owner, color, width, length, area);
     }
+
     
 }
