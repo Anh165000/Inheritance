@@ -9,11 +9,11 @@ public class Square {
     public double edge;
     public double area;
 
-    public Square(String owner, String color, float edge) {
+    public Square(String owner, String color, double edge) {
         this.owner = owner;
         this.color = color;
         this.edge = edge;
-        area = Math.pow(2, edge);
+        area = Math.pow(edge, 2);
 
     }
 
@@ -55,7 +55,7 @@ public class Square {
     }
 
     public void paint() {
-        System.out.printf("|Square   |%-15s|%-10s|%4.1f|%5.1f|", owner, color, edge, area);
+        System.out.printf("|Square   |%-15s|%-10s|%4.1f|%-5s|%5.1f|\n", owner, color, edge,"", area);
     }
 
 }

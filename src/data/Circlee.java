@@ -1,17 +1,18 @@
 package data;
 import java.lang.Math;
-public class circle {
+
+public class Circlee {
 
     public String owner;
     public String color;
     public double radius;
     public double area;
     
-    public circle(String owner, String color, double radius) {
+    public Circlee(String owner, String color, double radius) {
         this.owner = owner;
         this.color = color;
         this.radius = radius;
-        area = Math.PI * Math.pow(2, radius);
+        area = Math.PI * Math.pow(radius, 2);
     }
 
     public String getOwner() {
@@ -52,6 +53,6 @@ public class circle {
     // }
 
     public void paint(){
-        System.out.printf("|Circle   |%-15s|%-10s|%4.1f|%5.1f|", owner, color, radius, area);
+        System.out.printf("|Circle   |%-15s|%-10s|%4.1f|%-5s|%5.1f|\n", owner, color, radius, "", area);
     }
 }

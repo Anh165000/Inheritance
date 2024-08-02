@@ -62,7 +62,7 @@ public class Rectangle {
     }
 
     public void paint(){
-        System.out.printf("|Rectangle   |%-15s|%-10s|%4.1f|%4.1f|%5.1f|", owner, color, width, length, area);
+        System.out.printf("|Rectangle|%-15s|%-10s|%4.1f|%5.1f|%-5.1f|\n", owner, color, width, length, area);
     }
 
     

@@ -1,10 +1,14 @@
 package Craftman;
 
-import data.Rectangle;
+import data.*;
 
 public class Stage {
     public static void main(String[] args){
-        Rectangle a = new Rectangle("Anhh", "Blue", 10.4, 20.3);
-        a.paint();
+        Rectangle rt = new Rectangle("Anhh", "Blue", 10.4, 20.3);
+        Square sq = new Square("Anhh2", "Yellow", 5.9);
+        Circlee cc = new Circlee("Anhh3", "Black", 4.3);
+        rt.paint();
+        sq.paint();
+        cc.paint();
     }
 }
